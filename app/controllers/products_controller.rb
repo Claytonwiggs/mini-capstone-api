@@ -14,7 +14,7 @@ class ProductsController < ApplicationController
     render json: { message: product }
   end
 
-  def product3_infor
+  def product3_info
     product = Product.find(3)
     render json: { message: product }
   end
