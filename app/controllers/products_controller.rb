@@ -41,4 +41,8 @@ class ProductsController < ApplicationController
     product.destroy
     render json: { message: "Product Succesfully deleted." }
   end
+
+  def supplier
+    Product.find_by(id: supplier_id)
+  end
 end
